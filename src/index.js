@@ -6,7 +6,7 @@ import emitter from 'socket.io-emitter';
 
 const isRunningInDocker = process.env.DOCKER;
 const redisPort = isRunningInDocker ? 'redis' : 'localhost';
-const io = emitter({ host: 'redis', port: '6379' });
+const io = emitter({ host: redisPort, port: '6379' });
 
 const app = express();
 const server = http.Server(app);
