@@ -48,8 +48,5 @@
     "colors": "^1.1.2",
     "express": "^4.13.4",
     "socket.io-emitter": "^3.0.1"
-  },
-  "engines": {
-    "node": "6.2.1"
   }
 }
